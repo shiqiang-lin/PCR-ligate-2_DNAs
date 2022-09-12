@@ -29,9 +29,10 @@ line 124: cnd6 = abs((Tm_primer5 + Tm_primer3)/2 - Tm_favorite)
 
 The script relies on the sum of cnd1 to cnd6 (line 119-124) to sort the usefulness of the primers. The ideal primers should have a low value for the sum of cnd1, cnd2, cnd3, cnd4, cnd5 and cnd6.
 
-Commonly, the annealing temperature for PCR is 3 degrees less than the theoretical annealing temperature. In our script, the Tm_favorite is set 63 degrees Celsius (line 90 of the script), therefore, the ideal annealing temperature for PCR running is 60 degrees Celsius. This temperature is not too high or too low, which is good for most PCR running. Therefore, the idea of cnd5 that the Tm difference between Tm_overlap and Tm_favorite is as small as possible. The idea of cnd6 is that the Tm difference between the (Tm_primer5 and Tm_primer3)/2 and Tm_favorite is as small as possible. However, the value of Tm_favorite can be adjusted if users feel it necessary.
 
-The idea of cnd4 (line 122) is that the difference between (Tm_primer5 + Tm_primer3)/2 and Tm_overlap should be close to 3 degrees Celsius. For a successful overlap PCR, the bridging temperature (Tm_overlap) should be a little lower than the Tm_primer5 and Tm_primer3, which ensures a smooth bridging. Here we set the difference 3 degrees Celsius and it can be set 2 or 4 or other number degrees Celsius if users feel it necessary.
+The Tm value of the overlapping region between the two primers should be moderate. We set the favorite Tm value 63°C (line 90 of the script). Commonly, the annealing temperature for PCR is 3 degrees less than the theoretical annealing temperature. Therefore, the ideal annealing temperature for PCR running is 60°C. This temperature is not too high nor too low, which is good for most PCR running. The idea of cnd5 is that the Tm difference between Tm_overlap and Tm_favorite is as small as possible. The idea of cnd6 is that the Tm difference between the (Tm_primer5 and Tm_primer3)/2 and Tm_favorite is as small as possible. However, the value of Tm_favorite can be adjusted if users feel necessary.
+
+The idea of cnd4 (line 122) is that the difference between (Tm_primer5 + Tm_primer3)/2 and Tm_overlap should be close to 3°C. For a successful overlap PCR, the bridging temperature (Tm_overlap) should be a little lower than the Tm_primer5 and Tm_primer3, which ensures a smooth bridging. Here we set the difference 3°C and it can be set 2 or 4 or other number °C if users feel necessary.
 
 4. Trouble shooting
 To run the script successfully, users need to ensure the following:
