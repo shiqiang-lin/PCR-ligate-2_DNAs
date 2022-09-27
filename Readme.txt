@@ -9,9 +9,17 @@ Notes to the script
 6) IDLE (Integrated Development and Learning Environment) (www.python.org) for modifying the script when necessary.
 
 2. Running method
-1) Make a new directory, copy the Overlap_mutagenic_primer_v1.py, ECdnaQ.fasta and TBdnaN.fasta to the directory;
-2) open a terminal and cd to the new directory in 1);
-3) input the following command and press enter, wait for a few seconds, a new file storing the primers will appear in the directory.
+1) Make sure that the Biopython 1.79 has already been installed to the python 3.10.4. If not, 
+then open a terminal and input the following command and press enter.
+
+pip3.10 install biopython
+
+For more details about the Biopython 1.79, the readers can visit the link 
+https://biopython.org/wiki/Download.
+
+2) Make a new directory, copy the Overlap_mutagenic_primer_v1.py, ECdnaQ.fasta and TBdnaN.fasta to the directory;
+3) open a terminal and cd to the new directory in 1);
+4) input the following command and press enter, wait for a few seconds, a new file storing the primers will appear in the directory.
 
 python3.10 Overlap_ligation_primer_v1.py ECdnaQ.fasta TBdnaN.fasta
 
@@ -40,6 +48,15 @@ To run the script successfully, users need to ensure the following:
 2) In the command, input the FIRST fasta file, input a blank, and then input the SECOND fasta file. The order of the input fasta files is important.
 
 
+5. Additional note
+We also have another script that is useful for gene cloning in the lab. The GitHub Repo link is 
+https://github.com/shiqiang-lin/sdm-mutagenesis and the reference is 
+
+Xiaofang Huang, Liangting Xu, Chuyun Bi, Lili Zhao, Limei Zhang, Xuanyang Chen, Shiqian Qi, Shiqiang Lin. Designing overlap extension PCR primers for protein mutagenesis: a programmatic approach. In: Currin, A., Swainston, N. (eds) Directed Evolution. Methods in Molecular Biology, vol 2461. Humana, New York, NY. https://doi.org/10.1007/978-1-0716-2152-3_1.
+
+Thank you!
 
 
 
+
+ 
